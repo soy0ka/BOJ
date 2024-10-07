@@ -17,15 +17,12 @@ int main() {
   for (int i=0; i<n; i++) {
     scanf("%d", &arr[i]);
   }
-  for (int i=0; i<n; i++) {
-    for (int j=i+1; j<n; j++) {
-      if (arr[i] > arr[j]) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-      }
-    }
+  int min = arr[0];
+  int max = arr[0];
+  for (int i=1; i<n; i++) {
+    min = min < arr[i] ? min : arr[i];
+    max = max > arr[i] ? max : arr[i];
   }
-  printf("%d", arr[0] * arr[n-1]);
+  printf("%d", min*max);
   return 0; 
 }
