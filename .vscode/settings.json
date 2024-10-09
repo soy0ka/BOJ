@@ -11,6 +11,9 @@
     "bitset": "c",
     "unordered_map": "c",
     "algorithm": "c",
-    "format": "c"
-  }
+    "format": "c",
+    "string.h": "c",
+    "sstream": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
