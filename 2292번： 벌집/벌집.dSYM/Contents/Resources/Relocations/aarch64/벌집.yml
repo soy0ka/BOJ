@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/seoyeon/Documents/BOJ/2292번： 벌집/벌집"
+relocations:     []
+...
