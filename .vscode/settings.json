@@ -19,7 +19,9 @@
     "string_view": "c",
     "cstdlib": "c",
     "locale": "c",
-    "stdbool.h": "c"
+    "stdbool.h": "c",
+    "chrono": "c",
+    "functional": "c"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
