@@ -53,7 +53,8 @@
     "ostream": "cpp",
     "stop_token": "cpp",
     "thread": "cpp",
-    "tuple": "cpp"
+    "tuple": "cpp",
+    "iosfwd": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
