@@ -1,9 +1,8 @@
 # 10814번: 나이순 정렬 - <img src="https://static.solved.ac/tier_small/6.svg" style="height:20px" /> Silver V
 
 <!-- performance -->
-
-<!-- 문제 제출 후 깃허브에 푸시를 했을 때 제출한 코드의 성능이 입력될 공간입니다.-->
-
+### 성능 요약
+메모리: 13224 KB, 시간: 48 ms
 <!-- end -->
 
 ## 문제
