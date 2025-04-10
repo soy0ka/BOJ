@@ -55,7 +55,8 @@
     "thread": "cpp",
     "tuple": "cpp",
     "iosfwd": "cpp",
-    "ratio": "cpp"
+    "ratio": "cpp",
+    "numbers": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
