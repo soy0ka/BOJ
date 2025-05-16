@@ -17,30 +17,36 @@
 */
 #include <iostream>
 #include <vector>
-#include <map>
+#include <algorithm>
 
 using namespace std;
+
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
 
   int n;
   cin >> n;
-  map<int, int> cards;
-  for (int i = 0; i < n; i++) {
-    int card;
-    cin >> card;
-    cards[card]++;
+  vector<int> cards(n);
+  for (int i = 0; i < n; ++i) {
+    cin >> cards[i];
   }
 
-  int questions;
-  cin >> questions;
+  // 정렬 필수
+  sort(cards.begin(), cards.end());
 
-  for (int i = 0; i < questions; i++) {
-    int question;
-    cin >> question;
-    cout << cards[question] << ' ';
+  int m;
+  cin >> m;
+
+  for (int i = 0; i < m; ++i) {
+    int query;
+    cin >> query;
+
+    auto lower = lower_bound(cards.begin(), cards.end(), query);
+    auto upper = upper_bound(cards.begin(), cards.end(), query);
+    cout << (upper - lower) << ' ';
   }
+  cout << '\n';
 
   return 0;
 }
