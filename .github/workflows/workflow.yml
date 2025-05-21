@@ -1,10 +1,36 @@
-name: Update Markdown Performance
+name: Sort And Update Markdown Performance
 on:
   push:
     paths:
       - "**.md"
 jobs:
+  sort:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Run BOJ directory organizer
+        run: node script.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .
+          git commit -m "🔄 자동 정리: 문제 번호 패딩 및 티어 정렬"
+          git push
+        continue-on-error: true
+
   update:
+    needs: sort
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
