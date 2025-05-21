@@ -106,6 +106,7 @@
     "plaintext": true,
     "markdown": true,
     "scminput": false,
-    "typescript": true
+    "typescript": true,
+    "cpp": false
   }
 }
