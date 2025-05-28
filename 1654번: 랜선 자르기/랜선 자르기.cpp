@@ -31,7 +31,7 @@ int main () {
   long long min=1, max=*max_element(cables.begin(), cables.end());
   while (min <= max) {
     long long count = 0;
-    int median = (min+max) / 2;
+    long long median = (min+max) / 2;
     for (int i=0;i<cables.size();i++) {
       count += cables[i] / median;
     }
