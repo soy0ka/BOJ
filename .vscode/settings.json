@@ -99,7 +99,8 @@
     "valarray": "cpp",
     "ranges": "cpp",
     "stacktrace": "cpp",
-    "__config": "cpp"
+    "__config": "cpp",
+    "semaphore": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "github.copilot.enable": {
