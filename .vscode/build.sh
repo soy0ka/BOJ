@@ -23,7 +23,7 @@ LIB_FLAGS=("${(@)LIB_PATHS:#/-L*}")
 LIB_FLAGS=("${(@)LIB_FLAGS[@]/#/-L}")
 
 # ✅ 필요한 라이브러리들
-LIBS=(-lfido2 -lcbor -lhidapi -lcrypto)
+LIBS=(-lfido2 -lcbor -lhidapi -lcrypto -fsanitize=address -Wall)
 
 # ✅ 공통 컴파일 플래그 조합
 COMMON_FLAGS=("${INCLUDE_FLAGS[@]}" "${LIB_FLAGS[@]}" "${LIBS[@]}" -fcolor-diagnostics -fansi-escape-codes)
