@@ -1,4 +1,4 @@
-name: Update Markdown Performance
+name: Sort And Update Markdown Performance
 on:
   push:
     paths:
@@ -31,7 +31,6 @@ jobs:
           git commit -m "🔄 자동 정리: 문제 번호 패딩 및 티어 정렬"
           git push
         continue-on-error: true
-
 
   update:
     needs: sort
@@ -76,4 +75,3 @@ jobs:
           else
           	echo "No changes to commit."
           fi
-          
