@@ -1,9 +1,8 @@
 # 34071번: 첫 번째 문제는 정말 쉬운 문제일까? - <img src="https://static.solved.ac/tier_small/2.svg" style="height:20px" /> Bronze IV
 
 <!-- performance -->
-
-<!-- 문제 제출 후 깃허브에 푸시를 했을 때 제출한 코드의 성능이 입력될 공간입니다.-->
-
+### 성능 요약
+메모리: 2020 KB, 시간: 0 ms
 <!-- end -->
 
 ## 문제
