@@ -5,13 +5,12 @@
       "name": "Debug active file (lldb)",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "program": "${fileDirname}/${fileBasenameNoExtension}-cpp",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "MIMode": "lldb",
       "externalConsole": false,
-      "preLaunchTask": "Build active file (C++17)"
     }
   ]
 }
