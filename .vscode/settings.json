@@ -100,7 +100,8 @@
     "ranges": "cpp",
     "stacktrace": "cpp",
     "__config": "cpp",
-    "semaphore": "cpp"
+    "semaphore": "cpp",
+    "iomanip": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "github.copilot.enable": {
