@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
+#include <time.h>
 void printS (int n) {
   if (n == 0) return;
   printf("*");
@@ -17,10 +18,7 @@ void printS (int n) {
 }
 
 int main () {
-  int n = 0;
-  scanf("%d", &n);
-  for (int i = 0; i < n; i++) {
-    printS(n);
-    printf("\n");
+  while(1){
+    printf("%lu\n",clock());
   }
 }
