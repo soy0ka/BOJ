@@ -10,7 +10,7 @@
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "MIMode": "lldb",
-      "externalConsole": false,
+      "externalConsole": true
     }
   ]
 }

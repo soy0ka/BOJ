@@ -101,7 +101,12 @@
     "stacktrace": "cpp",
     "__config": "cpp",
     "semaphore": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "fstream": "cpp",
+    "future": "cpp",
+    "*.rh": "cpp",
+    "expected": "cpp",
+    "version": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "github.copilot.enable": {
