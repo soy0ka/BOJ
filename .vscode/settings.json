@@ -115,6 +115,7 @@
     "markdown": true,
     "scminput": false,
     "typescript": true,
-    "cpp": false
+    "r": false,
+    "cpp": true
   }
 }
