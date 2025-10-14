@@ -116,6 +116,6 @@
     "scminput": false,
     "typescript": true,
     "r": false,
-    "cpp": true
+    "cpp": false
   }
 }
