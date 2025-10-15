@@ -106,7 +106,8 @@
     "future": "cpp",
     "*.rh": "cpp",
     "expected": "cpp",
-    "version": "cpp"
+    "version": "cpp",
+    "hash_map": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "github.copilot.enable": {
