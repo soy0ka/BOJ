@@ -2,20 +2,40 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "C/C++: build active file (auto detect)",
+      "label": "Build active file (C++17)",
       "type": "shell",
-      "command": "${workspaceFolder}/.vscode/build.sh",
+      "command": "g++",
       "args": [
-        "${file}"
-      ],
-      "group": "build",
-      "problemMatcher": [
-        "$gcc"
+        "-std=c++17",
+        "-O2",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.out"
       ],
       "options": {
         "cwd": "${fileDirname}"
       },
-      "detail": "Auto-detect C or C++ and compile."
+      "problemMatcher": "$gcc"
     },
+    {
+      "label": "Run active file",
+      "type": "shell",
+      "command": "${fileDirname}/${fileBasenameNoExtension}.out",
+      "options": {
+        "cwd": "${fileDirname}"
+      }
+    },
+    {
+      "label": "Build & Run active file",
+      "dependsOn": [
+        "Build active file (C++17)",
+        "Run active file"
+      ],
+      "dependsOrder": "sequence",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
   ]
 }
