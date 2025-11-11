@@ -2,6 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
+      // 1) 활성 파일 빌드 (C++17)
       "label": "Build active file (C++17)",
       "type": "shell",
       "command": "g++",
@@ -18,6 +19,7 @@
       "problemMatcher": "$gcc"
     },
     {
+      // 2) 활성 파일 실행 (플랫폼별 실행 파일 이름/경로)
       "label": "Run active file",
       "type": "shell",
       "command": "${fileDirname}/${fileBasenameNoExtension}.out",
@@ -26,6 +28,7 @@
       }
     },
     {
+      // 3) 복합 태스크: 빌드 후 실행을 순차 수행
       "label": "Build & Run active file",
       "dependsOn": [
         "Build active file (C++17)",
